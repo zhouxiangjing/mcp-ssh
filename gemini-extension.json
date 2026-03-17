@@ -1,0 +1,47 @@
+{
+  "name": "ssh",
+  "version": "0.1.0",
+  "description": "Manage and analyze remote Linux systems via SSH within Gemini CLI.",
+  "mcpServers": {
+    "ssh": {
+      "command": "uvx",
+      "args": ["ssh-mcp-server"],
+      "env": {
+        "SSH_HOST": "${SSH_HOST}",
+        "SSH_PORT": "${SSH_PORT}",
+        "SSH_USERNAME": "${SSH_USERNAME}",
+        "SSH_PASSWORD": "${SSH_PASSWORD}",
+        "SSH_KEY_FILE": "${SSH_KEY_FILE}"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "SSH Host",
+      "description": "IP address or hostname of the remote SSH server",
+      "envVar": "SSH_HOST"
+    },
+    {
+      "name": "SSH Port",
+      "description": "SSH port (default: 22)",
+      "envVar": "SSH_PORT"
+    },
+    {
+      "name": "SSH Username",
+      "description": "SSH login username",
+      "envVar": "SSH_USERNAME"
+    },
+    {
+      "name": "SSH Password",
+      "description": "SSH login password (leave empty if using key authentication)",
+      "envVar": "SSH_PASSWORD",
+      "sensitive": true
+    },
+    {
+      "name": "SSH Key File",
+      "description": "Path to SSH private key file (e.g., ~/.ssh/id_rsa)",
+      "envVar": "SSH_KEY_FILE",
+      "sensitive": true
+    }
+  ]
+}

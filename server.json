@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.zhouxiangjing/mcp-ssh",
+  "title": "SSH MCP Server",
+  "description": "Natural language interface for managing and analyzing remote Linux systems via SSH.",
+  "version": "$VERSION",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "ssh-mcp-server",
+      "version": "$VERSION",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
