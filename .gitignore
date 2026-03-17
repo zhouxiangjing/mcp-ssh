@@ -31,6 +31,9 @@ env/
 *.swp
 *.swo
 
+# DeepV Code
+.deepvcode/
+
 # OS
 .DS_Store
 Thumbs.db
