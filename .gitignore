@@ -33,6 +33,7 @@ env/
 
 # DeepV Code
 .deepvcode/
+DEEPV.md
 
 # OS
 .DS_Store
