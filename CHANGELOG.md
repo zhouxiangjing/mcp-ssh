@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2026-03-18
+
+### Improved
+
+- `GEMINI.md` 顶部新增 `ROLE ACTIVATION` 角色激活声明，解决新会话第一条消息无法触发 SSH MCP 工具调用的冷启动问题
+- 补充大量中文模糊触发词（系统信息、服务器状态、查看服务器、服务器怎么样等），提升意图识别覆盖率
+- `get_system_overview` 触发词扩展至覆盖常见中文口语表达
+
 ## [0.1.2] - 2026-03-17
 
 ### Fixed
