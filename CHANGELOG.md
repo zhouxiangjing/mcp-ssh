@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.4] - 2026-03-18
+
+### Improved
+
+- `GEMINI.md` ROLE ACTIVATION 改用具体例句映射替代抽象表格，解决 Claude 模型对新会话第一条消息仍不触发工具的冷启动问题
+- 新增 20+ 中文口语例句覆盖（帮我看一下远程服务器的状态、服务器情况、查看服务器等）
+- 明确"server/服务器/系统/远程 + 任意状态词"模式规则，提升意图识别泛化能力
+- `gemini-extension.json` 版本号同步至 0.1.3
+
 ## [0.1.3] - 2026-03-18
 
 ### Improved
