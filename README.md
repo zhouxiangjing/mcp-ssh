@@ -94,14 +94,14 @@
 ### 方式一：uvx 直接运行（无需安装）
 
 ```bash
-uvx ssh-mcp-server --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
+uvx ssh-mcp-zlzero --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
 ```
 
 ### 方式二：pip 安装
 
 ```bash
-pip install ssh-mcp-server
-ssh-mcp-server --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
+pip install ssh-mcp-zlzero
+ssh-mcp-zlzero --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
 ```
 
 ### 方式三：源码安装（开发调试）
@@ -139,7 +139,7 @@ uv pip install -e ".[dev]"
 所有环境变量均可通过 CLI 参数覆盖：
 
 ```bash
-ssh-mcp-server \
+ssh-mcp-zlzero \
   --host 192.168.1.100 \
   --port 22 \
   --username admin \
@@ -147,7 +147,7 @@ ssh-mcp-server \
   --timeout 60
 ```
 
-运行 `ssh-mcp-server --help` 查看完整参数列表。
+运行 `ssh-mcp-zlzero --help` 查看完整参数列表。
 
 ### 多主机配置
 
@@ -176,7 +176,7 @@ export SSH_HOSTS_JSON='[
   "mcpServers": {
     "ssh": {
       "command": "uvx",
-      "args": ["ssh-mcp-server"],
+      "args": ["ssh-mcp-zlzero"],
       "env": {
         "SSH_HOST": "192.168.1.100",
         "SSH_USERNAME": "admin",
@@ -194,7 +194,7 @@ export SSH_HOSTS_JSON='[
   "mcpServers": {
     "ssh": {
       "command": "uvx",
-      "args": ["ssh-mcp-server"],
+      "args": ["ssh-mcp-zlzero"],
       "env": {
         "SSH_HOST": "your-server-ip",
         "SSH_USERNAME": "your-username",
@@ -213,7 +213,7 @@ export SSH_HOSTS_JSON='[
 {
   "ssh": {
     "command": "uvx",
-    "args": ["--from", "ssh-mcp-server", "ssh-mcp-server"],
+    "args": ["--from", "ssh-mcp-zlzero", "ssh-mcp-zlzero"],
     "env": {
       "SSH_HOST": "your-server-ip",
       "SSH_USERNAME": "your-username",
@@ -230,7 +230,7 @@ export SSH_HOSTS_JSON='[
 {
   "ssh": {
     "command": "uvx",
-    "args": ["--from", "ssh-mcp-server", "ssh-mcp-server"],
+    "args": ["--from", "ssh-mcp-zlzero", "ssh-mcp-zlzero"],
     "env": {
       "SSH_HOSTS_JSON": "[{\"name\":\"prod\",\"host\":\"10.0.0.1\",\"username\":\"admin\",\"key_file\":\"~/.ssh/prod_key\"},{\"name\":\"dev\",\"host\":\"10.0.0.2\",\"username\":\"dev\",\"key_file\":\"~/.ssh/id_rsa\"}]"
     }

@@ -225,7 +225,7 @@ When the user mentions a specific server by name (e.g., "on the web server", "ch
 ### Single Host (CLI)
 
 ```bash
-ssh-mcp-server --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
+ssh-mcp-zlzero --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
 ```
 
 ### Multi-host (JSON)

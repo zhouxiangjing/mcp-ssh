@@ -24,14 +24,14 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that le
 ### Run directly with uvx (no install needed)
 
 ```bash
-uvx ssh-mcp-server --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
+uvx ssh-mcp-zlzero --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
 ```
 
 ### Install from PyPI
 
 ```bash
-pip install ssh-mcp-server
-ssh-mcp-server --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
+pip install ssh-mcp-zlzero
+ssh-mcp-zlzero --host 192.168.1.100 --username admin --key-file ~/.ssh/id_rsa
 ```
 
 ### Install from source
@@ -67,7 +67,7 @@ Copy `.env.example` to `.env` and fill in your values — the server loads it au
 All environment variables can be overridden via CLI flags:
 
 ```bash
-ssh-mcp-server \
+ssh-mcp-zlzero \
   --host 192.168.1.100 \
   --port 22 \
   --username admin \
@@ -75,7 +75,7 @@ ssh-mcp-server \
   --timeout 60
 ```
 
-Run `ssh-mcp-server --help` for the full list.
+Run `ssh-mcp-zlzero --help` for the full list.
 
 ### Multi-host configuration
 
@@ -102,7 +102,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "ssh": {
       "command": "uvx",
-      "args": ["ssh-mcp-server"],
+      "args": ["ssh-mcp-zlzero"],
       "env": {
         "SSH_HOST": "192.168.1.100",
         "SSH_USERNAME": "admin",
@@ -120,7 +120,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "ssh": {
       "command": "uvx",
-      "args": ["ssh-mcp-server"],
+      "args": ["ssh-mcp-zlzero"],
       "env": {
         "SSH_HOST": "your-server-ip",
         "SSH_USERNAME": "your-username",
