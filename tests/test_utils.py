@@ -1,6 +1,6 @@
 """Unit tests for src/common/utils.py"""
 
-from unittest.mock import AsyncMock, Mock
+from unittest.mock import Mock
 
 import pytest
 

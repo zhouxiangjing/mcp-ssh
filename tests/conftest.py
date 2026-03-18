@@ -2,7 +2,7 @@
 Pytest configuration and fixtures for SSH MCP Server tests.
 """
 
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import Mock, patch
 
 import paramiko
 import pytest

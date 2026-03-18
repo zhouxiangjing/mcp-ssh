@@ -5,7 +5,6 @@ Unit tests for src/common/logging_utils.py
 import logging
 from unittest.mock import patch
 
-import pytest
 
 from src.common.logging_utils import configure_logging, resolve_log_level
 

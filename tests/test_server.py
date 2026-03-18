@@ -2,7 +2,6 @@
 Unit tests for src/common/server.py
 """
 
-import pytest
 from mcp.server.fastmcp import FastMCP
 
 from src.common.server import mcp

@@ -3,7 +3,7 @@ Unit tests for src/tools/sftp.py
 """
 
 import os
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import MagicMock
 
 import pytest
 
@@ -83,7 +83,6 @@ class TestDownloadFile:
 class TestGetFileInfo:
     @pytest.mark.asyncio
     async def test_file_info(self, mock_ssh_connection_manager):
-        import stat
 
         client = mock_ssh_connection_manager
         mock_sftp = MagicMock()

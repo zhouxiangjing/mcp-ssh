@@ -2,8 +2,7 @@
 Unit tests for src/common/connection.py
 """
 
-import os
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import Mock, patch
 
 import paramiko
 import pytest

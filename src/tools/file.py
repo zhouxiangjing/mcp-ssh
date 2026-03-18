@@ -1,6 +1,5 @@
 """工具：远程文件系统操作。"""
 
-import stat
 from typing import Optional
 
 from src.common.connection import SSHConnectionManager

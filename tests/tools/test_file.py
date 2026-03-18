@@ -28,7 +28,7 @@ class TestReadFile:
         client.exec_command.return_value = make_exec_result(stdout="all content")
 
         from src.tools.file import read_file
-        result = await read_file("/etc/hosts", max_lines=0)
+        await read_file("/etc/hosts", max_lines=0)
 
         cmd = client.exec_command.call_args[0][0]
         assert "cat" in cmd
