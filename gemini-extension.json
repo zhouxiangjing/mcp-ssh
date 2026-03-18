@@ -1,17 +1,22 @@
 {
   "name": "ssh",
   "version": "0.1.0",
-  "description": "Manage and analyze remote Linux systems via SSH within Gemini CLI.",
+  "description": "Manage and analyze remote Linux systems via SSH within AI assistants.",
   "mcpServers": {
     "ssh": {
       "command": "uvx",
-      "args": ["ssh-mcp-server"],
+      "args": [
+        "--from",
+        "ssh-mcp-zlzero@latest",
+        "ssh-mcp-zlzero"
+      ],
       "env": {
         "SSH_HOST": "${SSH_HOST}",
         "SSH_PORT": "${SSH_PORT}",
         "SSH_USERNAME": "${SSH_USERNAME}",
         "SSH_PASSWORD": "${SSH_PASSWORD}",
-        "SSH_KEY_FILE": "${SSH_KEY_FILE}"
+        "SSH_KEY_FILE": "${SSH_KEY_FILE}",
+        "SSH_IGNORE_KNOWN_HOSTS": "${SSH_IGNORE_KNOWN_HOSTS}"
       }
     }
   },
@@ -42,6 +47,11 @@
       "description": "Path to SSH private key file (e.g., ~/.ssh/id_rsa)",
       "envVar": "SSH_KEY_FILE",
       "sensitive": true
+    },
+    {
+      "name": "SSH Ignore Known Hosts",
+      "description": "Skip host key verification, set true for internal or dev servers",
+      "envVar": "SSH_IGNORE_KNOWN_HOSTS"
     }
   ]
 }
