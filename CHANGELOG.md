@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-03-17
+
+### Fixed
+
+- 包名从 `ssh-mcp-server` 重命名为 `ssh-mcp-zlzero`（PyPI 名称冲突）
+- 修复 CI/CD workflow 中 `pytest`/`ruff` 命令找不到的问题（改用 `uv run`）
+- 修复 CI 触发分支配置（补充 `master` 分支）
+- `gemini-extension.json` 同步更新包名，补充 `SSH_IGNORE_KNOWN_HOSTS` 配置项
+- `GEMINI.md` 全面重写为 AI 意图触发指南，提升 MCP 工具调用识别率
+
 ## [0.1.0] - 2026-03-17
 
 ### Added
